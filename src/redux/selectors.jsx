@@ -14,7 +14,6 @@ export const selectTodoAfterSAF = createSelector(
 
         function checkPriority(saf, result){
             if(saf.priorityFilter === 'all'){
-                console.log('test')
                 return result.filter(todo => {
                     return checkStatus(saf, todo)
                 })

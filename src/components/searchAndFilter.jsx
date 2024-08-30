@@ -13,8 +13,6 @@ function searchAndFilter(){
     const dispatch = useDispatch()
     const todoListAfterSAF = useSelector(selectTodoAfterSAF)
 
-    console.log(todoListAfterSAF.length)
-
     function changeSAFStore(keyword, radioStatus, prior) {
         setKeyword(keyword)
         setRadioStatus(radioStatus)
